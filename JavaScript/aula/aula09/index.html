@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/doc.js">
+    <link rel="stylesheet" href="/style.css">
+    <title>aula 09</title>
+</head>
+<body>
+<h1>Somando Valores</h1>
+
+<input type="number" name="btn1" id="btn1"> *
+<input type="number" name="btn2" id="btn2">
+<input type= "button" id="botao" value="Somar" onclick="somar()">
+<h4 id="res">Resultado</h4>
+
+
+
+<script>
+  
+function somar(){
+
+    var bt1 = document.getElementById("btn1")
+    var bt2 = document.querySelector("input#btn2")
+    var r = document.getElementById("res")
+    var n1 = Number(bt1.value)
+    var n2 = Number(bt2.value)
+    var s = n1 * n2
+    r.innerText = `O resultado da soma entra ${n1} + ${n2} é igual a ${s}`
+}
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

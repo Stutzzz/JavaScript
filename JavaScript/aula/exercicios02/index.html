@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+<header>
+    <h1>Verificador de idade</h1>
+</header>
+
+<section>
+    <div id="data">
+        <p>Ano de nascimento:
+            <input type="number" id="ano" min="0">
+        </p>
+        
+    </div>
+    <div id="sexo">
+        <p>Sexo:
+            <input type="radio" name="sexo" id="masculino" checked>
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="sexo" id="feminino">
+            <label for="feminino">Feminino</label>
+        </p>
+    </div>
+    <input type="button" value="Verificar" id="btn" onclick="verificar()">
+    <div id="img">
+        
+        <p id="res">Preencha os dados acima para ver o resultado!</p>
+    </div>
+</section>
+
+<footer>
+<p>&copy; Leandrostutz</p>
+</footer>
+
+    <script src="./doc.js"></script>
+</body>
+</html>
